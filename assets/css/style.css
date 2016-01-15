@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.wrapper{
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+#nav {
+  position: relative;
+  background-color: #1D83F7;
+  width: 320px;
+  height: auto;
+  padding: 11px 10px;
+  text-align: right;
+  color: white;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav a:hover {
+  text-decoration: underline;
+}
+
+#nav h1 {
+  color: white;
+  font-weight: 300;
+  font-size: 50pt;
+}
+
+
+#nav li {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+#view {
+  flex-grow: 1;
+}
+
+.content {
+  padding: 20px 10px;
+  width: 1024px;
+}
+
+.content ul {
+  padding: 8px 0px;
+}
+
+.content #square {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #606060;
+  margin: 7px;
+}
+
+.content ul li {
+  padding: 10px 0px;
+  border: 1px solid #dae4ef;
+  margin: 0 0 15px 0;
+  text-align: left;
+  font-size: 12pt;
+  padding: 0 10px;
+}
+
+.content .bold {
+  font-weight: bold;
+}
+
+.unread {
+  background: #f2f2f2;
+}
+
+h1{
+  padding: 0px;
+  margin: 0px;
+}
+
+hr {
+  padding: 3px;
+  margin: 0px;
+}
+
+.from {
+  font-weight: bold;
+}
+
+.align-center {
+  text-align: center;
+  font-size: 16pt;
+  font-weight: 300;
+}
+
+.content .project #title {
+  text-align: center;
+}
+
+.content .project #title h1 {
+  font-size: 20pt;
+}
+
+#body{
+  padding: 10px;
+}
+
+.left-arrow:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0px;
+  width: 0;
+  height: 0;
+  left: 10px;
+  position: relative;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid white;
+}
+
+.pull-right {
+  font-size: 10pt;
+  position: relative;
+  left: 100px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ideros">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio Winnin</title>
+  <link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+  <link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <nav id="nav">
+      <h1>projetos</h1>
+      <br>
+      <ul>
+        <li ng-repeat="project in projects">
+          <a ui-sref="project({id: $index + '-' + project.name})"
+          ng-class="{ 'left-arrow': $index == selectedIndex }" ng-click="changeArrow($index)">
+            {{project.name}}
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="view" ui-view></div>
+  </div>
+
+</body>
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/ui-router/release/angular-ui-router.js"></script>
+<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="controllers/projects_controller.js"></script>
+<script src="api/api.js"></script>
+</script>
+</html>

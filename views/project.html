@@ -1,0 +1,35 @@
+<div class="content">
+  <div class="row align-center">
+    <div class="col-md-6">Stars {{project.stargazers_count}}</div>
+    <div class="col-md-6">Forks {{project.forks_count}}</div>
+  <div class="project">
+    <div id="title">
+      <h1>{{project.description}}</h1>
+    </div>
+    <span class="from">{{email.from}}</span>
+    <div id="body">
+      <ul>
+        <li ng-repeat="commit in commits | limitTo: limit as results">
+          <div class="row">
+            <div class="col-xs-1 col-sm-1">
+              <div id="square"></div>
+            </div>
+            <div class="col-xs-6 col-sm-8">
+              <span class="bold">{{commit.commit.message}}</span>
+              <br>
+              @{{commit.committer.login}}
+            </div>
+            <div class="col-xs-6 col-sm-3 pull-right">{{commit.commit.committer.date}}</div>
+          </div>
+        </li>
+        <div class="btn-group">
+          <button ng-hide="results.length === commits.length" ng-click="limit = limit +20"
+          class="btn btn-primary btn-lg">
+            Mostrar mais...
+          </button>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+</div>
