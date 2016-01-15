@@ -1,4 +1,4 @@
-var app = angular.module('ideros', ['ui.router']);
+var app = angular.module('winnin', ['ui.router']);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
