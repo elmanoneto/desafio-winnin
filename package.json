@@ -1,8 +1,8 @@
 {
-  "name": "ideros",
+  "name": "winin",
   "version": "1.0.0",
-  "description": "Desafio Íderos",
-  "main": "index.js",
+  "description": "Desafio Winnin",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
